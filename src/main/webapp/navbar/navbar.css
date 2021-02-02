@@ -1,6 +1,17 @@
+.page-body {
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: darkgray;
+}
+
 .shao-nav-bar {
-  background-color: lightblue;
-  padding: 10px;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  background-color: dodgerblue;
+  padding: 12px;
   position: fixed;
   width: 100%;
 }
