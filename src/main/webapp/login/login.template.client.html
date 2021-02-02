@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
   <meta charset="UTF-8">
-  <title>Login</title>
+  <title>Sign In</title>
 </head>
 <body>
-  <h1>
-    Sign In
-  </h1>
-  <div>
-    Username <input type="text">
-  </div>
-  <div>
-    Password
-    <input type="text">
-  </div>
-  <div>
-    <button>Sign in</button>
-  </div>
-  <a href="">Forgot Password</a> <a href="">Sign Up</a>
-  <div>
-    <a href="../index.html">Home</a>
-  </div>
+<div class="container">
+  <h1>Sign In</h1>
+  <form>
+    <div class="mb-3 row">
+      <label for="username" class="col-sm-2 col-form-label">Username</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="username" placeholder="input your username">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword" placeholder="input your password">
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-10">
+        <a class="btn btn-primary btn-block"
+           href=""
+           role="button">
+          Sign in
+        </a>
+        <a href="">Forgot Password</a>
+        <a href="" class="pull-right">Sign Up</a>
+      </div>
+    </div>
+
+  </form>
+</div>
+
 
 </body>
 </html>
