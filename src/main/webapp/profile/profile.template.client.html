@@ -4,20 +4,17 @@
   <link rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Profile</title>
 </head>
 <body>
   <div class="container">
     <h1>Profile</h1>
-
     <div class="alert alert-danger" role="alert">
       Danger Will Robinson
     </div>
-
     <div class="alert alert-success" role="alert">
-      Yay!!
+      Profile successfully update
     </div>
-
     <div class="mb-3 row">
       <label for="username"
              class="col-sm-2 col-form-label">
@@ -28,95 +25,72 @@
                readonly
                class="form-control"
                id="username"
-               value="Alice"/>
+               value="Alice"
+               title="Please type your username"/>
       </div>
     </div>
-
     <div class="mb-3 row">
-      <label for="inputPassword"
-             class="col-sm-2 col-form-label">
-        Password
-      </label>
-      <div class="col-sm-10">
-        <input type="password"
-               class="form-control"
-               id="inputPassword">
-      </div>
-    </div>
-
-    <div class="mb-3 row">
-      <label for="phone"
-             class="col-sm-2 col-form-label">
+      <label for="phone" class="col-sm-2 col-form-label">
         Phone
       </label>
       <div class="col-sm-10">
         <input type="tel"
                class="form-control"
-               id="phone">
+               id="phone"
+               placeholder="(555) 123-4324">
       </div>
     </div>
-
     <div class="mb-3 row">
-      <label for="email"
-             class="col-sm-2 col-form-label">
+      <label for="email" class="col-sm-2 col-form-label">
         Email
       </label>
       <div class="col-sm-10">
         <input type="email"
                class="form-control"
-               title="Please enter a valid email"
-               placeholder="alice@wonderland"
-               id="email">
+               id="email"
+               placeholder="alice@wonderland.com">
       </div>
     </div>
-
     <div class="mb-3 row">
-
-      <label for="role"
-             class="col-sm-2 col-form-label">
+      <label for="role" class="col-sm-2 col-form-label">
         Role
       </label>
-
       <div class="col-sm-10">
-        <select id="role"
-                   class="form-control">
-
+        <select class="form-control" id="role">
           <option value="">Faculty</option>
           <option value="">Student</option>
           <option value="">Staff</option>
-
         </select>
       </div>
     </div>
-
     <div class="mb-3 row">
-      <label for="dob"
-             class="col-sm-2 col-form-label">
-        DOB
+      <label for="dob" class="col-sm-2 col-form-label">
+        Date of Birth
       </label>
       <div class="col-sm-10">
         <input type="date"
                class="form-control"
-               title="Please enter your DOB"
-               value="2021-01-2"
                id="dob">
       </div>
     </div>
-
     <div class="mb-3 row">
-      <label for="dob"
-             class="col-sm-2 col-form-label">
-
-      </label>
+      <div class="col-sm-2"></div>
       <div class="col-sm-10">
-        <a class="btn btn-danger btn-block" href="../index.html">
+        <a href=""
+           class="btn btn-success btn-block">
+          Update
+        </a>
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-10">
+        <a href="../index.html"
+           class="btn btn-danger btn-block">
           Logout
         </a>
       </div>
     </div>
-
-
-
   </div>
 
 </body>
