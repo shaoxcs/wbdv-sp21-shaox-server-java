@@ -36,12 +36,17 @@ public class WidgetController {
   }
 
   @DeleteMapping("/api/widgets/{wid}")
-  public Integer deleteWidget(@PathVariable("wid") Long id) {
+  public Integer deleteWidget(@PathVariable("wid") Integer id) {
     return service.deleteWidget(id);
   }
 
   @PutMapping("/api/widgets/{wid}")
-  public Integer updateWidget(@PathVariable("wid") Long id, @RequestBody Widget widget) {
+  public Integer updateWidget(@PathVariable("wid") Integer id, @RequestBody Widget widget) {
     return service.updateWidget(id, widget);
+  }
+
+  @GetMapping("/api/widgets/{wid}")
+  public Widget findWidgetById(@PathVariable("wid") Integer wid) {
+    return service.findWidgetById(wid);
   }
 }
